@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WardrobeOrganizer.Models.Article>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <div class="title">
+    <h1>Closet Inventory</h1>
+    @Html.ActionLink("Create New", "Create")
+    </div>
+
+    <div class="row">
+        @foreach (var item in Model)
+         {
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+                    <p>@Html.DisplayFor(modelItem => item.Season)</p>
+                    <p>@Html.DisplayNameFor(model => model.IsClean) @Html.DisplayFor(modelItem => item.IsClean)</p>
+                    <p><img src="@Html.DisplayFor(modelItem => item.Photo)" /></p>
+                    <p class="link">@Html.ActionLink("Edit", "Edit", new { id = item.ArticleID }) | @Html.ActionLink("Details", "Details", new { id = item.ArticleID })</p>
+
+                </div>
+            </div>
+        </div>
+         }
+    </div>
+</div>

@@ -1,0 +1,24 @@
+﻿@model WardrobeOrganizer.Models.Article
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="title">
+    <h2>Details</h2>
+</div>
+
+<div class="details">
+    <h4>Article</h4>
+
+    <p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+    <p>@Html.DisplayNameFor(model => model.Color): @Html.DisplayFor(model => model.Color)</p>
+    <p>@Html.DisplayNameFor(model => model.Season): @Html.DisplayFor(model => model.Season)</p>
+    <p>@Html.DisplayNameFor(model => model.Ocassion): @Html.DisplayFor(model => model.Ocassion)</p>
+    <p>@Html.DisplayNameFor(model => model.IsClean): @Html.DisplayFor(model => model.IsClean)</p>
+    <p>@Html.DisplayNameFor(model => model.Clothing.Type): @Html.DisplayFor(model => model.Clothing.Type)</p>
+
+
+</div>
+<p>
+    @Html.ActionLink("Back To The Closet", "Index")
+</p>

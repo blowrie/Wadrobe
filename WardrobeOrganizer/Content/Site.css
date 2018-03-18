@@ -1,0 +1,131 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(/Content/Images/Closet.jpeg);
+    background-size: cover;
+   background-repeat: no-repeat;
+    
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+a.navbarbrand {
+
+}
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    border-radius: 50%;
+    text-align: center;
+    background-color: royalblue;
+    width: 300px;
+    height: 300px;
+}
+
+.caption {
+    margin-top: 30px;
+}
+
+    .caption h3 {
+        color: snow;
+    }
+
+    .caption p {
+        color: snow;
+    }
+
+.link a {
+    color: snow;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    box-shadow: 5px 5px grey;
+}
+
+.col-md-8 {
+    height: 200px;
+    background-color: royalblue;
+    text-align: center;
+    color: snow;
+    border-radius: 10%;
+}
+
+.btn {
+    background-color: snow;
+    color: royalblue;
+   
+}
+
+.sel {
+    height: 200px !important;
+    width: 293.33px !important;
+    box-shadow: none;
+    border-radius: 0%;
+}
+
+.title a {
+    color: white !important;
+}
+
+.title {
+    color: royalblue;
+}
+
+.col-md-3 {
+    background-color: snow;
+    color: royalblue;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.details {
+    background-color: royalblue;
+    color: white;
+    margin: 10px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.navbar-inverse {
+    background-color: royalblue !important;
+    border-color: snow !important;
+    font-family: Consolas;
+    font-style: italic;
+    
+    
+}
+
+.navbar-inverse a {
+        color: snow !important;
+}
+
+.navbar-inverse a:hover {
+        color: black !important;
+}

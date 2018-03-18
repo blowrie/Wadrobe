@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WardrobeOrganizer.Models.Clothing>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="title">
+    <h2>Your Types Of Clothes</h2>
+    <p> @Html.ActionLink("Add an Article of Clothing", "Create")</p>
+</div>
+<div class="row">
+    <div class="ArticleType">
+        
+
+        @foreach (var item in Model)
+        {
+        <div class="col-md-3">
+                <div class="caption">
+                    <h1>@Html.DisplayFor(modelItem => item.Type)</h1>
+                    <p>@Html.ActionLink("Edit", "Edit", new { id = item.ClothingID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ClothingID }) </p>
+                </div>
+           
+         </div>
+                }
+   </div>
+</div>
